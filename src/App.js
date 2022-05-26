@@ -1,17 +1,22 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import {Navbar} from './componentes/Navbar'
-
+import {Navbar} from './componentes/Navbar/Navbar'
+import {ItemListContainer} from './componentes/ItemListContainer/ItemListContainer'
+import {Nosotros} from './componentes/Nosotros/Nosotros'
 
 function App() {
 
-  const contenido = "Primer contenido de mi App."
-  const estiloContenido = {fontSize: "40x", border: "2px solid #FFF"}
+  const integrantes = {
+    nombre: 'Micol',
+  }
 
   return (
     <div className="App">
       <Navbar/>
 
-      <p style={estiloContenido}>{contenido}</p>
+     <ItemListContainer nombre={integrantes.nombre}/>
+     <Nosotros/>
+
 
     </div>
   );

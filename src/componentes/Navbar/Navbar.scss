@@ -1,0 +1,27 @@
+.header{
+    background-image:  linear-gradient(#d9b592, #f5e1ce);
+
+     &__container{
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         max-width: 1100px;
+         margin: 0 auto;
+         padding: 20px 0;
+
+         .header__navbar{
+             display: flex;
+             width: 50%;
+             justify-content: space-around;
+             align-items: center;
+
+             .header__navlink{
+                 text-decoration: none;
+                 color: black;
+                 font-size: 2vw;
+                 margin: 30px;
+             }
+         }
+
+        }
+    }
