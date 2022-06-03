@@ -17,7 +17,7 @@ function App() {
       <Navbar/>
 
      
-     <ItemListContainer nombre={integrantes.nombre}/>
+     <ItemListContainer/>
      <Nosotros/>
      <Counter/>
 
