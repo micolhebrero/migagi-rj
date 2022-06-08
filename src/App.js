@@ -6,6 +6,7 @@ import {Nosotros} from './componentes/Nosotros/Nosotros'
 import Counter from './componentes/Counter/Counter';
 
 
+
 function App() {
 
   const integrantes = {
