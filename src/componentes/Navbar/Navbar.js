@@ -1,6 +1,7 @@
 import './Navbar.scss'
 import '../Cart/Cart'
 import { Cart } from '../Cart/Cart'
+import { Link } from 'react-router-dom'
 
 export const Navbar = () => {
 
@@ -10,10 +11,11 @@ export const Navbar = () => {
         <h1 className="header__logo">MIGAGI TEJIDOS</h1>
 
         <nav className="header__navbar">
-            <p className="header__navlink">Accesorios</p>
-            <p className="header__navlink">Accesorios</p>
-            <p className="header__navlink">Indumentaria</p>
-            <p className="header__navlink">Deco</p>
+            <Link to={"/categorias/indumentaria"} className="header__navlink">Indumentaria</Link>
+            <Link to={"/categorias/acesorios"} className="header__navlink">Accesorios</Link>
+            <Link to={"/categorias/deco"} className="header__navlink">Deco</Link>
+            <Link to={"/nosotros"} className="header__navlink">Nosotros</Link>
+            <Link to={"/contacto"} className="header__navlink">Contacto</Link>
             <Cart/>
             </nav>
 

@@ -1,27 +1,26 @@
+
 import {useEffect, useState} from "react"
 import { Spinner } from "react-bootstrap"
 import ItemList from "../ItemList/ItemList"
 import { pedirDatos } from "../Mock/pedirDatos"
 import { useParams } from "react-router-dom"
+import ItemDetail from "../ItemDetail/ItemDetail"
 
-export const ItemListContainer = () => {
+export const ItemDetailContainer = () => {
 
-    const [items, setItems] = useState([])
+    const [item, setItems] = useState(null)
     const [loading, setLoading] = useState(true)
 
-    const { categoryId } = useParams
-    console.log(categoryId)
+    const {itemId} = useParams()
+    console.log(itemId)
+
 
     useEffect(() => {
         setLoading(true)
 
         pedirDatos()
         .then((resp) => {
-            if(!categoryId){
-                setItems( resp )
-            } else {
-                setItems( resp.filter((item) => item.categoria === categoryId) )
-            }
+            setItems( resp.find((item) => item.id === Number(itemId)))
         })
         .catch((error) => {
             console.log('ERROR', error)
@@ -29,7 +28,7 @@ export const ItemListContainer = () => {
         .finally(() => {
             setLoading(false)
         })
-    }, [categoryId])
+    }, [])
 
     return (
         <section>
@@ -39,7 +38,7 @@ export const ItemListContainer = () => {
                     <span className="visually-hidden">Loading...</span>
                   </Spinner>
 
-                : <ItemList items={items}/>
+                : <ItemDetail/>
 
             }
         </section>
