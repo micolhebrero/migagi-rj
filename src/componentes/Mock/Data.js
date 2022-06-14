@@ -5,7 +5,8 @@ const productos = [
         precio: 4500,
         desc: "Talle: Unico",
         categoria: "indumentaria",
-        img: '../imagenes/capricornio.jpg'
+        img: '../imagenes/capricornio.jpg',
+        stock: 3
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ const productos = [
         precio: 4000,
         desc: "Talle: Unico",
         categoria: "indumentaria",
-        img: '../imagenes/cassandra.jpg'
+        img: '../imagenes/cassandra.jpg',
+        stock: 3
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ const productos = [
         precio: 3000,
         desc: "Talle: de 1 a 2 años",
         categoria: "indumentaria",
-        img: '../imagenes/faustina.jpg'
+        img: '../imagenes/faustina.jpg',
+        stock: 3
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ const productos = [
         precio: 3000,
         desc: "Talle: de 1 a 2 años",
         categoria: "indumentaria",
-        img: '../imagenes/sagitario.jpg'
+        img: '../imagenes/sagitario.jpg',
+        stock: 3
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ const productos = [
         precio: 3000,
         desc: "Talle: Unico",
         categoria: "indumentaria",
-        img: '../imagenes/geminis.jpg'
+        img: '../imagenes/geminis.jpg',
+        stock: 3
     },
     {
         id: 6,
@@ -45,7 +50,8 @@ const productos = [
         precio: 3000,
         desc: "Talle: de 1 a 2 años",
         categoria: "indumentaria",
-        img: '../imagenes/felipe.jpg'
+        img: '../imagenes/felipe.jpg',
+        stock: 3
     },
     {
         id: 7,
@@ -53,7 +59,8 @@ const productos = [
         precio: 3000,
         desc: "Talle: Unico",
         categoria: "indumentaria",
-        img: '../imagenes/jasmin.jpg'
+        img: '../imagenes/jazmin.jpg',
+        stock: 3
     },
     {
         id: 8,
@@ -61,7 +68,8 @@ const productos = [
         precio: 3000,
         desc: "Talle: Unico",
         categoria: "indumentaria",
-        img: '../imagenes/felisa.jpg'
+        img: '../imagenes/felisa.jpg',
+        stock: 3
     },
     {
         id: 9,
@@ -69,7 +77,8 @@ const productos = [
         precio: 1000,
         desc: "Talle: Unico",
         categoria: "indumentaria",
-        img: '../imagenes/verano.jpg'
+        img: '../imagenes/verano.jpg',
+        stock: 3
     },
     {
         id: 10,
@@ -77,7 +86,8 @@ const productos = [
         precio: 1700,
         desc: "",
         categoria: "accesorios",
-        img: '../imagenes/carteragranny.jpg'
+        img: '../imagenes/carteragranny.jpg',
+        stock: 3
     },
     {
         id: 11,
@@ -85,7 +95,8 @@ const productos = [
         precio: 2000,
         desc: "",
         categoria: "accesorios",
-        img: '../imagenes/accesorio.jpg'
+        img: '../imagenes/accesorio.jpg',
+        stock: 3
     },
     {
         id: 12,
@@ -93,7 +104,8 @@ const productos = [
         precio: 1500,
         desc: "",
         categoria: "accesorios",
-        img: '../imagenes/neceser.jpg'
+        img: '../imagenes/neceser.jpg',
+        stock: 3
     },
     {
         id: 13,
@@ -101,7 +113,8 @@ const productos = [
         precio: 1000,
         desc: "",
         categoria: "accesorios",
-        img: '../imagenes/cuellito.jpg'
+        img: '../imagenes/cuellito.jpg',
+        stock: 3
     },
     {
         id: 14,
@@ -109,7 +122,8 @@ const productos = [
         precio: 1700,
         desc: "Pedido a medida",
         categoria: "accesorios",
-        img: '../imagenes/medias.jpg'
+        img: '../imagenes/medias.jpg',
+        stock: 3
     },
     {
         id: 15,
@@ -117,7 +131,8 @@ const productos = [
         precio: 1700,
         desc: "",
         categoria: "accesorios",
-        img: '../imagenes/cartera2.jpg'
+        img: '../imagenes/cartera2.jpg',
+        stock: 3
     },
     {
         id: 16,
@@ -125,7 +140,8 @@ const productos = [
         precio: 1000,
         desc: "Para Colgar",
         categoria: "deco",
-        img: '../imagenes/cuadrouno.jpg'
+        img: '../imagenes/cuadrouno.jpg',
+        stock: 3
     },
     {
         id: 17,
@@ -133,7 +149,8 @@ const productos = [
         precio: 1000,
         desc: "Para Colgar",
         categoria: "deco",
-        img: '../imagenes/cuadrodos.jpg'
+        img: '../imagenes/cuadrodos.jpg',
+        stock: 3
     },
     {
         id: 18,
@@ -141,7 +158,8 @@ const productos = [
         precio: 900,
         desc: "",
         categoria: "deco",
-        img: '../imagenes/vasosblanco.jpg'
+        img: '../imagenes/vasosblanco.jpg',
+        stock: 3
     },
     {
         id: 19,
@@ -149,7 +167,8 @@ const productos = [
         precio: 1000,
         desc: "",
         categoria: "deco",
-        img: '../imagenes/canasta.jpg'
+        img: '../imagenes/canasta.jpg',
+        stock: 3
     },
     {
         id: 20,
@@ -157,7 +176,8 @@ const productos = [
         precio: 800,
         desc: "Para Colgar",
         categoria: "deco",
-        img: '../imagenes/mandala.jpg'
+        img: '../imagenes/mandala.jpg',
+        stock: 3
     },
     {
         id: 21,
@@ -165,7 +185,8 @@ const productos = [
         precio: 1100,
         desc: "",
         categoria: "deco",
-        img: '../imagenes/concanasta.jpg'
+        img: '../imagenes/concanasta.jpg',
+        stock: 3
     },
 ]
 

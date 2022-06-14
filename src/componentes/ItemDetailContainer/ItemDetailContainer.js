@@ -38,7 +38,7 @@ export const ItemDetailContainer = () => {
                     <span className="visually-hidden">Loading...</span>
                   </Spinner>
 
-                : <ItemDetail/>
+                : <ItemDetail item={item}/>
 
             }
         </section>

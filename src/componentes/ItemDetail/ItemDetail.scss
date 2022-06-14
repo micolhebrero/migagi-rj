@@ -1,0 +1,14 @@
+.tarjeta{
+    width: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    &__dos{
+        width: 20%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: blanchedalmond;
+
+    }
+}

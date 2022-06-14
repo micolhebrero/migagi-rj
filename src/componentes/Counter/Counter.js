@@ -2,26 +2,24 @@ import { useEffect, useState } from "react"
 import Button from 'react-bootstrap/Button'
 
 
-const Counter = () => {
+const Counter = ({max}) => {
 
-    let [contador, setContador] = useState(0)
-
+    let [contador, setContador] = useState(1)
 
     const incrementar = () => {
 
-        setContador(contador + 1)
+        contador < max && setContador(contador + 1)
     }
     const disminuir = () => {
 
-        setContador(contador - 1)
+        contador > 1 && setContador(contador - 1)
     }
 
     return (
         <div className="container my-5">
-            <h2>Counter</h2>
-            <Button onClick={incrementar}  variant="secondary">+</Button>{' '}
-            <p>{contador}</p>
-            <Button onClick={disminuir}  variant="secondary">-</Button>{' '}
+        <Button onClick={disminuir}  variant="secondary">-</Button>{' '}
+        <span> {contador} </span>
+        <Button onClick={incrementar}  variant="secondary">+</Button>{' '}
 
         </div>
     )

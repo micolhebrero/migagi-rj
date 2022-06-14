@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react"
 import { Spinner } from "react-bootstrap"
-import ItemList from "../ItemList/ItemList"
 import { pedirDatos } from "../Mock/pedirDatos"
+import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
 
 export const ItemListContainer = () => {
@@ -17,7 +17,7 @@ export const ItemListContainer = () => {
 
         pedirDatos()
         .then((resp) => {
-            if(!categoryId){
+            if (!categoryId) {
                 setItems( resp )
             } else {
                 setItems( resp.filter((item) => item.categoria === categoryId) )
