@@ -5,13 +5,20 @@ import {ItemListContainer} from './componentes/ItemListContainer/ItemListContain
 import {Nosotros} from './componentes/Nosotros/Nosotros'
 import Contacto from './componentes/Contacto/Contacto';
 import Footer from './componentes/Footer/Footer';
+import { useState } from 'react';
+
 import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
 import { ItemDetailContainer } from './componentes/ItemDetailContainer/ItemDetailContainer';
+import { CartContext } from './context/CartContext';
 
 
 function App() {
 
+  const [cart, setCart] = useState( [] )
+
   return (
+    <CartContext.Provider value={ {cart, setCart} }>
+
     <BrowserRouter>
 
       <Navbar/>
@@ -27,6 +34,7 @@ function App() {
       <Footer/>
 
     </BrowserRouter>
+    </CartContext.Provider>
   );
 }
 

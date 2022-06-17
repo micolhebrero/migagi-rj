@@ -1,15 +1,15 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import Button from 'react-bootstrap/Button'
 
 
-const Counter = ({max}) => {
+const Counter = ( {max, setContador, contador, handleAgregar} ) => {
 
-    let [contador, setContador] = useState(1)
 
     const incrementar = () => {
 
         contador < max && setContador(contador + 1)
     }
+    
     const disminuir = () => {
 
         contador > 1 && setContador(contador - 1)
@@ -17,9 +17,13 @@ const Counter = ({max}) => {
 
     return (
         <div className="container my-5">
-        <Button onClick={disminuir}  variant="secondary">-</Button>{' '}
+        <Button onClick={disminuir}  variant="secondary">-</Button>
         <span> {contador} </span>
-        <Button onClick={incrementar}  variant="secondary">+</Button>{' '}
+        <Button onClick={incrementar}  variant="secondary">+</Button>
+
+        <hr/>
+
+        <Button onClick={handleAgregar} className="btn btn-success">Agregar al carrito</Button>
 
         </div>
     )

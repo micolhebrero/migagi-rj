@@ -1,6 +1,6 @@
 import './Navbar.scss'
 import '../Cart/Cart'
-import { Cart } from '../Cart/Cart'
+import CartWidget from '../CartWidget/CartWidget'
 import { Link } from 'react-router-dom'
 
 export const Navbar = () => {
@@ -16,8 +16,9 @@ export const Navbar = () => {
             <Link to={"/categorias/deco"} className="header__navlink">Deco</Link>
             <Link to={"/nosotros"} className="header__navlink">Nosotros</Link>
             <Link to={"/contacto"} className="header__navlink">Contacto</Link>
-            <Cart/>
             </nav>
+
+            <CartWidget/>
 
      </div>
     </header>
