@@ -5,19 +5,16 @@ import {ItemListContainer} from './componentes/ItemListContainer/ItemListContain
 import {Nosotros} from './componentes/Nosotros/Nosotros'
 import Contacto from './componentes/Contacto/Contacto';
 import Footer from './componentes/Footer/Footer';
-import { useState } from 'react';
-
-import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom'
+import { BrowserRouter, Routes, Route, Navigate, UNSAFE_RouteContext} from 'react-router-dom'
 import { ItemDetailContainer } from './componentes/ItemDetailContainer/ItemDetailContainer';
-import { CartContext } from './context/CartContext';
+import { CartContext, CartProvider } from './context/CartContext';
+import Cart from './componentes/Cart/Cart'
 
 
 function App() {
 
-  const [cart, setCart] = useState( [] )
-
   return (
-    <CartContext.Provider value={ {cart, setCart} }>
+    <CartProvider>
 
     <BrowserRouter>
 
@@ -26,6 +23,7 @@ function App() {
        <Route path='/' element={ <ItemListContainer/> }/>
        <Route path='/categorias/:categoryId' element={<ItemListContainer/> }/>
        <Route path='/item/:itemId' element={<ItemDetailContainer/>} />
+       <Route path='/cart' element={<Cart/>} />
        <Route path='/nosotros' element={ <Nosotros/> }/>
        <Route path='/contacto' element={ <Contacto/> }/>
        <Route path='*' element={<Navigate to={"/"}/>}/>
@@ -34,7 +32,7 @@ function App() {
       <Footer/>
 
     </BrowserRouter>
-    </CartContext.Provider>
+    </CartProvider>
   );
 }
 

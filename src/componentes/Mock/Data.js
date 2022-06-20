@@ -6,7 +6,7 @@ const productos = [
         desc: "Talle: Unico",
         categoria: "indumentaria",
         img: '../imagenes/capricornio.jpg',
-        stock: 3
+        stock: 6
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ const productos = [
         desc: "Talle: de 1 a 2 años",
         categoria: "indumentaria",
         img: '../imagenes/faustina.jpg',
-        stock: 3
+        stock: 2
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ const productos = [
         desc: "Talle: de 1 a 2 años",
         categoria: "indumentaria",
         img: '../imagenes/sagitario.jpg',
-        stock: 3
+        stock: 10
     },
     {
         id: 5,
@@ -42,7 +42,7 @@ const productos = [
         desc: "Talle: Unico",
         categoria: "indumentaria",
         img: '../imagenes/geminis.jpg',
-        stock: 3
+        stock: 5
     },
     {
         id: 6,
@@ -51,7 +51,7 @@ const productos = [
         desc: "Talle: de 1 a 2 años",
         categoria: "indumentaria",
         img: '../imagenes/felipe.jpg',
-        stock: 3
+        stock: 8
     },
     {
         id: 7,
@@ -60,7 +60,7 @@ const productos = [
         desc: "Talle: Unico",
         categoria: "indumentaria",
         img: '../imagenes/jazmin.jpg',
-        stock: 3
+        stock: 1
     },
     {
         id: 8,
@@ -69,7 +69,7 @@ const productos = [
         desc: "Talle: Unico",
         categoria: "indumentaria",
         img: '../imagenes/felisa.jpg',
-        stock: 3
+        stock: 4
     },
     {
         id: 9,
@@ -78,7 +78,7 @@ const productos = [
         desc: "Talle: Unico",
         categoria: "indumentaria",
         img: '../imagenes/verano.jpg',
-        stock: 3
+        stock: 6
     },
     {
         id: 10,
@@ -96,7 +96,7 @@ const productos = [
         desc: "",
         categoria: "accesorios",
         img: '../imagenes/accesorio.jpg',
-        stock: 3
+        stock: 1
     },
     {
         id: 12,
@@ -105,7 +105,7 @@ const productos = [
         desc: "",
         categoria: "accesorios",
         img: '../imagenes/neceser.jpg',
-        stock: 3
+        stock: 9
     },
     {
         id: 13,
@@ -114,7 +114,7 @@ const productos = [
         desc: "",
         categoria: "accesorios",
         img: '../imagenes/cuellito.jpg',
-        stock: 3
+        stock: 8
     },
     {
         id: 14,
@@ -123,7 +123,7 @@ const productos = [
         desc: "Pedido a medida",
         categoria: "accesorios",
         img: '../imagenes/medias.jpg',
-        stock: 3
+        stock: 4
     },
     {
         id: 15,
@@ -132,7 +132,7 @@ const productos = [
         desc: "",
         categoria: "accesorios",
         img: '../imagenes/cartera2.jpg',
-        stock: 3
+        stock: 2
     },
     {
         id: 16,
@@ -141,7 +141,7 @@ const productos = [
         desc: "Para Colgar",
         categoria: "deco",
         img: '../imagenes/cuadrouno.jpg',
-        stock: 3
+        stock: 6
     },
     {
         id: 17,
@@ -150,7 +150,7 @@ const productos = [
         desc: "Para Colgar",
         categoria: "deco",
         img: '../imagenes/cuadrodos.jpg',
-        stock: 3
+        stock: 2
     },
     {
         id: 18,
@@ -168,7 +168,7 @@ const productos = [
         desc: "",
         categoria: "deco",
         img: '../imagenes/canasta.jpg',
-        stock: 3
+        stock: 4
     },
     {
         id: 20,
@@ -177,7 +177,7 @@ const productos = [
         desc: "Para Colgar",
         categoria: "deco",
         img: '../imagenes/mandala.jpg',
-        stock: 3
+        stock: 8
     },
     {
         id: 21,
@@ -186,7 +186,7 @@ const productos = [
         desc: "",
         categoria: "deco",
         img: '../imagenes/concanasta.jpg',
-        stock: 3
+        stock: 5
     },
 ]
 

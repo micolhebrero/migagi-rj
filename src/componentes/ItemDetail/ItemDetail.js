@@ -1,14 +1,12 @@
 import { useContext, useState } from "react"
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { CartContext } from "../../context/CartContext"
 import Counter from "../Counter/Counter"
 import './ItemDetail.scss'
 
 const ItemDetail = ({item}) => {
 
-  const {cart, setCart} = useContext(CartContext)
-  console.log(cart)
-  console.log(setCart)
+  const {addItem, isInCart} = useContext(CartContext)
 
   const [cantidad, setCantidad] = useState(1)
 
@@ -23,7 +21,7 @@ const ItemDetail = ({item}) => {
       ...item,
       cantidad
     }
-    setCart( [...cart, itemToCart] )
+    addItem(itemToCart)
   }
 
     return(
@@ -32,12 +30,23 @@ const ItemDetail = ({item}) => {
           <img src={item.img} alt={item.nombre} className="tarjeta__dos"/>
           <p className="tarjeta__dos">{item.desc}</p>
           <h4 className="tarjeta__dos">Precio: ${item.precio}</h4>
-          <Counter className="tarjeta__dos"
+         {/*  <Counter className="tarjeta__dos"
             max={item.stock}
             contador={cantidad}
             setCounter={setCantidad}
             handleAgregar={handleAgregar}
-          />
+          /> */}
+          {
+            isInCart(item.id)
+            ? <Link to="/cart" className="btn btn-success my-3">Terminar compra</Link>
+            :
+             <Counter className="tarjeta__dos"
+                max={item.stock}
+                contador={cantidad}
+                setContador={setCantidad}
+                handleAgregar={handleAgregar}
+             />
+          }
           <button onClick={handleVolver} className=" btn btn-secundary tarjeta__dos">Volver</button>
         </div>
     )
