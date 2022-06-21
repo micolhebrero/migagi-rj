@@ -1,0 +1,16 @@
+
+.compra{
+    font-size: 30px;
+    display: flex;
+    display: grid;
+    flex-wrap: wrap;
+    justify-items: center;
+    margin-top: 15px;
+       &__nombre{
+        font-size: 25px;
+        
+       }
+       .compra__cantidad{
+        font-size: 20px;
+       }
+}

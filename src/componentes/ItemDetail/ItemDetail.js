@@ -30,12 +30,6 @@ const ItemDetail = ({item}) => {
           <img src={item.img} alt={item.nombre} className="tarjeta__dos"/>
           <p className="tarjeta__dos">{item.desc}</p>
           <h4 className="tarjeta__dos">Precio: ${item.precio}</h4>
-         {/*  <Counter className="tarjeta__dos"
-            max={item.stock}
-            contador={cantidad}
-            setCounter={setCantidad}
-            handleAgregar={handleAgregar}
-          /> */}
           {
             isInCart(item.id)
             ? <Link to="/cart" className="btn btn-success my-3">Terminar compra</Link>
