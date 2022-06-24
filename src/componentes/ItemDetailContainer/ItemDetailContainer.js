@@ -2,13 +2,14 @@
 import {useEffect, useState} from "react"
 import { Spinner } from "react-bootstrap"
 import ItemList from "../ItemList/ItemList"
-import { pedirDatos } from "../Mock/pedirDatos"
 import { useParams } from "react-router-dom"
 import ItemDetail from "../ItemDetail/ItemDetail"
+import { doc, getDoc } from "firebase/firestore"
+import { db } from "../../firebase/config"
 
 export const ItemDetailContainer = () => {
 
-    const [item, setItems] = useState(null)
+    const [item, setItem] = useState(null)
     const [loading, setLoading] = useState(true)
 
     const {itemId} = useParams()
@@ -18,16 +19,17 @@ export const ItemDetailContainer = () => {
     useEffect(() => {
         setLoading(true)
 
-        pedirDatos()
-        .then((resp) => {
-            setItems( resp.find((item) => item.id === Number(itemId)))
-        })
-        .catch((error) => {
-            console.log('ERROR', error)
+        const docRef = doc(db, "productos", itemId)
+
+        getDoc(docRef)
+        .then((doc) => {
+            setItem( {id: doc.id, ...doc.data()} )
         })
         .finally(() => {
             setLoading(false)
         })
+
+
     }, [])
 
     return (

@@ -84,7 +84,7 @@ const productos = [
         id: 10,
         nombre: "Cartera Flor",
         precio: 1700,
-        desc: "",
+        desc: "Hilo",
         categoria: "accesorios",
         img: '../imagenes/carteragranny.jpg',
         stock: 3
@@ -93,7 +93,7 @@ const productos = [
         id: 11,
         nombre: "Ruana Tauro",
         precio: 2000,
-        desc: "",
+        desc: "Lana",
         categoria: "accesorios",
         img: '../imagenes/accesorio.jpg',
         stock: 1
@@ -102,7 +102,7 @@ const productos = [
         id: 12,
         nombre: "Neceser Granny",
         precio: 1500,
-        desc: "",
+        desc: "Hilo",
         categoria: "accesorios",
         img: '../imagenes/neceser.jpg',
         stock: 9
@@ -111,14 +111,14 @@ const productos = [
         id: 13,
         nombre: "Cuello Piscis",
         precio: 1000,
-        desc: "",
+        desc: "Lana",
         categoria: "accesorios",
         img: '../imagenes/cuellito.jpg',
         stock: 8
     },
     {
         id: 14,
-        nombre: "Meidas Lulu",
+        nombre: "Medias Lulu",
         precio: 1700,
         desc: "Pedido a medida",
         categoria: "accesorios",
@@ -129,7 +129,7 @@ const productos = [
         id: 15,
         nombre: "Bandolera Sol",
         precio: 1700,
-        desc: "",
+        desc: "Hilo",
         categoria: "accesorios",
         img: '../imagenes/cartera2.jpg',
         stock: 2
@@ -156,7 +156,7 @@ const productos = [
         id: 18,
         nombre: "Posavasos Jazmin",
         precio: 900,
-        desc: "",
+        desc: "Hilo",
         categoria: "deco",
         img: '../imagenes/vasosblanco.jpg',
         stock: 3
@@ -165,7 +165,7 @@ const productos = [
         id: 19,
         nombre: "Canasta Basica Blanca",
         precio: 1000,
-        desc: "",
+        desc: "Hilo",
         categoria: "deco",
         img: '../imagenes/canasta.jpg',
         stock: 4
@@ -183,7 +183,7 @@ const productos = [
         id: 21,
         nombre: "Jazmin con canasta",
         precio: 1100,
-        desc: "",
+        desc: "Hilo",
         categoria: "deco",
         img: '../imagenes/concanasta.jpg',
         stock: 5
