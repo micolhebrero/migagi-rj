@@ -1,5 +1,6 @@
 import { BsFillTrashFill } from 'react-icons/bs'
 import {useCartContext} from "../../context/CartContext"
+import { Link } from 'react-router-dom'
 import EmptyCart from './EmptyCart'
 import './Cart.scss'
 
@@ -29,6 +30,7 @@ const Cart = () => {
            <h4 className='mx-5'>Total: ${totalPrice()}</h4>
 
            <button onClick={emptyCart} className="btn btn-outline-danger mx-5">Vaciar carrito</button>
+           <Link to="/checkout" className="btn btn-success mx-4" >Terminar mi compra</Link>
 
        </div>
    )

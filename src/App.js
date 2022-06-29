@@ -9,6 +9,7 @@ import { BrowserRouter, Routes, Route, Navigate, UNSAFE_RouteContext} from 'reac
 import { ItemDetailContainer } from './componentes/ItemDetailContainer/ItemDetailContainer';
 import { CartContext, CartProvider } from './context/CartContext';
 import Cart from './componentes/Cart/Cart'
+import Checkout from './componentes/Checkout/Checkout';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
        <Route path='/categorias/:categoryId' element={<ItemListContainer/> }/>
        <Route path='/item/:itemId' element={<ItemDetailContainer/>} />
        <Route path='/cart' element={<Cart/>} />
+       <Route path='/checkout' element={<Checkout/>} />
        <Route path='/nosotros' element={ <Nosotros/> }/>
        <Route path='/contacto' element={ <Contacto/> }/>
        <Route path='*' element={<Navigate to={"/"}/>}/>
