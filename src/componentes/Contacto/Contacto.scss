@@ -1,10 +1,10 @@
-.container{
+.cont{
     width: 100%;
     font-size: 40px;
     display: flex;
     justify-content: center;
     margin-top: 1rem;
-    &__linkUno{
+    &__liUno{
         display: flex;
         font-size: 40px;
         justify-content:center;
@@ -12,7 +12,7 @@
         margin-top: 3rem;
         color:#3b5998;
     }
-    &__linkDos{
+    &__liDos{
         display: flex;
         font-size: 40px;
         justify-content:center;
@@ -22,7 +22,7 @@
         
 
     }
-    &__linkTres{
+    &__liTres{
         display: flex;
         font-size: 40px;
         justify-content:center;

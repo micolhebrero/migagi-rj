@@ -1,6 +1,6 @@
 import './Contacto.scss'
 import { BsFacebook, BsInstagram, BsWhatsapp  } from 'react-icons/bs'
-import { Link } from "react-router-dom";
+
 
 
 
@@ -9,10 +9,10 @@ const Contacto = () => {
         <div>
             <h2></h2>
 
-            <p className='container' >Nos podes encontrar en: </p>
-            <a href="https://www.facebook.com" target="_blank" className='container__linkUno'><BsFacebook/></a>
-            <a href="https://www.instagram.com/migagitejidos" target="_blank" className='container__linkDos'><BsInstagram/> </a>
-            <a href="https://www.whatsapp.com" target="_blank" className='container__linkTres'><BsWhatsapp/> </a>
+            <p className='cont' >Nos podes encontrar en: </p>
+            <a href="https://www.facebook.com" target="_blank" className='cont__liUno'><BsFacebook/></a>
+            <a href="https://www.instagram.com/migagitejidos" target="_blank" className='cont__liDos'><BsInstagram/> </a>
+            <a href="https://www.whatsapp.com" target="_blank" className='cont__liTres'><BsWhatsapp/> </a>
         </div>
     )
 }
