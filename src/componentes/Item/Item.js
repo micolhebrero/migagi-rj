@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 const Item = ({item}) => {
 
         return(
-            <div className='row row-cols-1 row-cols-md-3 g-4'>
-            <div className='col' key={item.id}>
+            <div className='row row-cols-3 row-cols-md-3 g-2'>
+            <div className='col-md-4' key={item.id}>
               <div className='card mx-4 my-4'>
                 <img src={item.img} className='card-img-top' alt="" />
                 <div className='card-body'>

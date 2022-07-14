@@ -1,12 +1,10 @@
 import Item from "../Item/Item"
+import './ItemList.scss'
 
 const ItemList = ({items}) => {
 
     return(
          <div>
-            <h2>Nuestros Productos</h2>
-            <hr/>
-
              {
                 items.map((item) => <Item key={item.id} item={item}/>)
              }

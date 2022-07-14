@@ -1,18 +1,22 @@
 .titulo {
 
+    background-color: rgb(245, 224, 196);
+    border-radius: 2rem;
+    width: 80%;
+    margin-top: 4rem;
+    margin-left: 10rem;
+
+
     &__inicio{
         border-radius: 10px;
         color: black;
         font-weight: bold;
         font-size: 30px;
-        background-color: rgb(252, 224, 188);
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, auto);
+        display: flex;
+        justify-content: center;
         width: 100%;
     }
     .quienSomos{
-        background-color: rgb(245, 224, 196);
         display: flex;
         width: 60%;
         border-radius: 10px;

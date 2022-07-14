@@ -8,8 +8,7 @@ export const Navbar = () => {
 
     return <header className="header">
      <div className="header__container">
-        <h1 className="header__logo">MIGAGI TEJIDOS</h1>
-
+     <img src="../imagenes/logo.png" alt='logo' className='header__logo'/>
         <nav className="header__navbar">
             <Link to={"/categorias/indumentaria"} className="header__navlink">Indumentaria</Link>
             <Link to={"/categorias/accesorios"} className="header__navlink">Accesorios</Link>

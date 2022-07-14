@@ -1,0 +1,33 @@
+.container{
+    width: 100%;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    &__linkUno{
+        display: flex;
+        font-size: 40px;
+        justify-content:center;
+        align-items: center;
+        margin-top: 3rem;
+        color:#3b5998;
+    }
+    &__linkDos{
+        display: flex;
+        font-size: 40px;
+        justify-content:center;
+        align-items: center;
+        margin-top: 3rem;
+        color: coral;
+        
+
+    }
+    &__linkTres{
+        display: flex;
+        font-size: 40px;
+        justify-content:center;
+        align-items: center;
+        margin-top: 3rem;
+        color: #00bb2d
+    }
+}

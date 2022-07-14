@@ -3,7 +3,8 @@ import './Nosotros.scss'
 export const Nosotros = () => {
 
     return <div className="titulo">
-        <h4 className="titulo__inicio"> Quienes Somos</h4>
+        <h4 className="titulo__inicio"> Quien Soy</h4>
+        
         <p className="quienSomos">Bienvenidos a Migagi Tejidos, mi nombre es Micol, soy una
             crochetera que cree que el crochet nunca pasa de moda.
             Te invito conocer y disfrutar de prendas unicas tejidas a mano.
